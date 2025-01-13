@@ -18,15 +18,17 @@ def set_servo_angle(angle):
 # Example: Move servo to 0° and 90° angle with a small delay
 while True:
     global angle
-    angle = 180
-    set_servo_angle(angle)
-    print(angle)
-    time.sleep(1)
-    #set_servo_angle(-90)
-    #print('fif')
-    #time.sleep(1)
+#     angle = 180
+#     set_servo_angle(angle)
+#     print(angle)
+#     time.sleep(1)
+#     set_servo_angle(-90)
+#     print('fif')
+#     time.sleep(1)
     set_servo_angle(-180)
     print('fif')
+    time.sleep(1)
+    set_servo_angle(-90)
     time.sleep(1)
 
 # Optionally, turn off PWM when done
